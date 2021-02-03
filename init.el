@@ -8,9 +8,9 @@
   (find-file "~/.emacs.d/init.el"))
 
 ;; 快速打开gtd文件
-(defun open-gtd-file()
+(defun open-task-file()
   (interactive)
-  (find-file "~/beibaobook/src/gtd/task_proj.org"))
+  (find-file "~/beibaobook/src/gtd/task.org"))
 ;; 快速打开工作gtd文件
 (defun open-work-flow-file()
   (interactive)

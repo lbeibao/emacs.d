@@ -1,8 +1,10 @@
 ;; 将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
-;; 将函数 open-inbox-file 绑定到 <f3> 键上
-(global-set-key (kbd "<f3>") 'open-inbox-file)
-(global-set-key (kbd "<f4>") 'open-gtd-file)
+;; 将打开工作文件绑定到F3
+(global-set-key (kbd "<f3>") 'open-work-flow-file)
+;; 将函数 open-inbox-file 绑定到 F4 键上
+(global-set-key (kbd "<f4>") 'open-inbox-file)
+(global-set-key (kbd "C-c r") 'org-capture)
 
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
@@ -15,11 +17,11 @@
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
+(global-set-key (kbd "C-c g") 'counsel-git)
 ;;(global-set-key (kbd "C-h o") 'counsel-describe-symbol)
 ;;(global-set-key (kbd "C-h l") 'counsel-find-library)
 ;;(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
 ;;(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
-;;(global-set-key (kbd "C-c g") 'counsel-git)
 ;;(global-set-key (kbd "C-c j") 'counsel-git-grep)
 ;;(global-set-key (kbd "C-c k") 'counsel-ag)
 ;;(global-set-key (kbd "C-x l") 'counsel-locate)
@@ -32,8 +34,6 @@
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
 (global-set-key (kbd "s-/") 'hippie-expand)
-
-(global-set-key (kbd "C-c r") 'org-capture)
 
 (global-set-key (kbd "C-w") 'backward-kill-word)
 

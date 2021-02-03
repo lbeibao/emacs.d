@@ -8,11 +8,6 @@
   (setq gc-cons-percentage 0.5)   (run-with-idle-timer 5 t #'garbage-collect)
   (setq garbage-collection-messages t)
   )
-
-;; 设置窗口位置
-(set-frame-position (selected-frame) 2 10)
-;; 设置GUI窗口的尺寸
-;;(set-frame-width (selected-frame) 200)
 (when (eq system-type 'windows-nt)
   (set-frame-height (selected-frame) 35)
 )
@@ -23,22 +18,18 @@
   (set-frame-height (selected-frame) 50)
 )
 
-
-
 ;; 禁止生成备份文件
 (setq make-backup-files nil)
 
 ;; 禁止自动保存文件
 (setq auto-save-default nil)
 
-
-
 ;; 开启全局 Company 补全
 (global-company-mode t)
 
 ;; 最近打开的文件
 (recentf-mode 1)
-(setq recentf-max-menu-item 10)
+(setq recentf-max-menu-item 25)
 
 
 ;; 开启选中替换
