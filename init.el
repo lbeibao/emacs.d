@@ -22,7 +22,7 @@
 (require 'init-packages)
 (require 'init-ui)
 (require 'init-better-defaults)
-(require 'init-pyim)
+;;(require 'init-pyim)
 (require 'init-org)
 (require 'init-keybindings)
 (require 'org-pomodoro)
@@ -31,4 +31,3 @@
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
 (load-file custom-file)
-

@@ -1,7 +1,7 @@
 ;; 将函数 open-init-file 绑定到 <f2> 键上
 (global-set-key (kbd "<f2>") 'open-init-file)
 ;; 将打开工作文件绑定到F3
-(global-set-key (kbd "<f3>") 'open-work-flow-file)
+(global-set-key (kbd "<f3>") 'open-task-file)
 ;; 将函数 open-inbox-file 绑定到 F4 键上
 (global-set-key (kbd "<f4>") 'open-inbox-file)
 (global-set-key (kbd "C-c r") 'org-capture)
